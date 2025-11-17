@@ -6,10 +6,3 @@ module "aws_vpc" {
   environment         = "dev"
   public_subnet_count = 2
 }
-
-module "ecs"{
-  source = "./modules/ecs"
-  ecs_cluster_name       = "my-ecs-cluster"
-  }
-
-}
