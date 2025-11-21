@@ -17,7 +17,7 @@ variable "vpc_name" {
   type        = string
 }
 
-variable "acm_certificate_arn" {
+variable "certificate_arn" {
   description = "ARN of the SSL certificate for the ALB."
   type        = string
 }
@@ -34,10 +34,6 @@ variable "hosted_zone_id" {
   type        = string
 }
 
-variable "certificate_arn" {
-  description = "ARN of the issued ACM certificate"
-  type        = string
-}
 
 #vpc variables.tf
 variable "project_name" {
