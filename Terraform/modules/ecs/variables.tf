@@ -86,3 +86,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "task_role_arn" {
+  description = "ARN of the IAM role that the ECS task can assume"
+  type        = string
+}

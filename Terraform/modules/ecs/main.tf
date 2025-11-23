@@ -9,6 +9,8 @@ resource "aws_ecs_task_definition" "ecs_task" {
   cpu                      = var.ecs_cpu
   memory                   = var.ecs_memory
   execution_role_arn       = var.iam_role_arn
+  task_role_arn            = var.iam_role_arn
+
   container_definitions = jsonencode([
     {
       name      = "${var.ecs_cluster_name}-container"
@@ -73,5 +75,4 @@ resource "aws_ecs_service" "ecs_service" {
     container_port   = var.http
   }
 
-  depends_on = [var.alb_listener_arn]
 }

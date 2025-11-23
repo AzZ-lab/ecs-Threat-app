@@ -68,6 +68,6 @@ variable "subnet_ids" {
 }
 
 variable "acm_certificate_arn" {
-  description = "ARN of the SSL certificate for the ALB."
+  description = "The ARN of the ACM certificate for HTTPS listener"
   type        = string
 }

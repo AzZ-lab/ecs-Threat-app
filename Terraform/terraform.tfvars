@@ -1,4 +1,4 @@
-ecr_uri        = "663931958925.dkr.ecr.eu-west-2.amazonaws.com/ecs-threat-app:latest"
+ecr_uri        = "663931958925.dkr.ecr.eu-west-2.amazonaws.com/az/ecs-threat-app:latest"
 iam_role_arn   = "arn:aws:iam::663931958925:role/ecs-app"
 
 vpc_name       = "ecs-threat-app-vpc"

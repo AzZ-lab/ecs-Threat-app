@@ -11,6 +11,8 @@ module "acm" {
   source         = "./modules/acm"
   domain_name    = var.domain_name
   hosted_zone_id = var.hosted_zone_id
+  alb_dns_name    = module.alb.alb_dns_name
+  alb_zone_id     = module.alb.alb_zone_id
 }
 
 module "alb" {
@@ -31,4 +33,7 @@ module "ecs" {
   alb_target_group_arn  = module.alb.alb_target_group_arn
   alb_listener_arn      = module.alb.alb_listener_arn
   iam_role_arn          = var.iam_role_arn
+  task_role_arn         = var.iam_role_arn
+
+  depends_on = [module.alb]
 }
