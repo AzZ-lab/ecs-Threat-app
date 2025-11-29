@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'terraform/**'
+      - 'Terraform/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
@@ -24,7 +24,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./terraform
+        working-directory: ./Terraform
 
     steps:
       - name: Checkout code
