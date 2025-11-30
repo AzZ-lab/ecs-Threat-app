@@ -30,6 +30,39 @@ This GIF demonstrates the live deployment of the Threat Composer application run
 
 
 
+## 📁 Project Structure
+
+```
+app/
+terraform/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars
+├── provider.tf
+├── modules/
+│   ├── vpc/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── alb/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── ecs/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── acm/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+.github/
+└── workflows/
+    ├── build.yaml
+    └── deploy.yaml
+```
+
 
 
 
