@@ -73,6 +73,16 @@ Below are the current pipeline statuses demonstrating successful builds and depl
 
 
 ![Deploy Success](images/deploy-pipeline.png)
+
+## 🔒 Security
+The infrastructure follows security best practices:
+* Terraform state is stored in an encrypted S3 bucket
+* State locking is handled using Terraform's `use_lockfile` feature for local development
+* Security groups use least privilege access
+* All traffic is encrypted with HTTPS/TLS
+* GitHub Actions uses OIDC authentication instead of long-lived credentials
+
+
 ## 💻 Local App Setup
 
 ### Option 1: Run Locally with `serve`
