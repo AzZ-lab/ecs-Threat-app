@@ -69,13 +69,10 @@ terraform/
 
 Below are the current pipeline statuses demonstrating successful builds and deployments:
 
-![Build Success](images/pipeline-build-success.png)
-![Deploy Success](images/pipeline-deploy-success.png)
-
-<!-- Add more pipeline images here as needed -->
+![Build Success](images/build.png)
 
 
-
+![Deploy Success](images/deploy.png)
 ## 💻 Local App Setup
 
 ### Option 1: Run Locally with `serve`
