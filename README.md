@@ -64,6 +64,46 @@ terraform/
 ```
 
 
+## 💻 Local App Setup
+
+### Option 1: Run Locally with `serve`
+```bash
+# Install dependencies
+yarn install
+
+# Build the application
+yarn build
+
+# Install 'serve' globally
+yarn global add serve
+
+# Serve the built application
+serve -s build
+```
+
+Visit in your browser:  
+```
+http://localhost:3000/workspaces/default/dashboard
+```
+
+---
+
+### Option 2: Build and Run with Docker
+```bash
+# Build the Docker image
+docker build -t threat-composer-app ./app
+
+# Run the Docker container
+docker run -p 3000:3000 threat-composer-app
+```
+
+Then visit:  
+```
+http://localhost:3000/workspaces/default/dashboard
+```
+
+
+
 
 
 
