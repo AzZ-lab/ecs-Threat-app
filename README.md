@@ -24,7 +24,7 @@ All infrastructure components are provisioned using Terraform with remote state 
 
 ## 🎥 Application Demo
 
-![Application Demo](demo.gif)
+![Application Demo](images/demo.gif)
 
 This GIF demonstrates the live deployment of the Threat Composer application running on AWS ECS Fargate, accessed securely through the Application Load Balancer over HTTPS. It showcases the successful end-to-end flow from infrastructure provisioning to application availability.
 
