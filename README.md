@@ -15,7 +15,7 @@ Key highlights:
 
 ## 🏗 Architecture Diagram
 
-![Architecture Diagram](architecture.png)
+![Architecture Diagram](images/architecture.png)
 
 This architecture shows the full end-to-end deployment of the containerised Threat Composer application on AWS. The application is packaged into a Docker container, pushed to Amazon ECR, and deployed to an ECS Fargate service. Incoming traffic is routed securely through an Application Load Balancer (ALB) using HTTPS with an SSL certificate issued by AWS Certificate Manager (ACM) and validated via Route 53.
 
