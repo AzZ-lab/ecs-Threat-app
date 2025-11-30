@@ -6,7 +6,7 @@ This repository deploys a **containerised Threat Composer** application on **AWS
 ---
 
 Key highlights:
-- Fully automated provisioning with Terraform (remote state in S3 + DynamoDB locking)
+- Fully automated provisioning with Terraform (remote state in S3 + locking)
 - Container images built and pushed to Amazon ECR
 - ECS Fargate service fronted by an Application Load Balancer (ALB) with HTTPS using ACM certificates validated via Route 53
 - GitHub Actions pipelines for Docker image build/push, `terraform plan`, `terraform apply`, and `terraform destroy`
